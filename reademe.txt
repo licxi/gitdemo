@@ -6,4 +6,4 @@ git reset --hard HEAD~1 回退到上一个版本，可以为任何数字或版本号
 git checkout -- file 让文件回到最近一次的 git commit或git add是的状态，删除的也可以 --很重要 没有--就等于切换到另一个分支
 git reflog 记录每一个命令
 git reset HEAD file 可以回退版本，也可以把暂存区的修改回退到工作区 head表示最新版本
-git 
+git rm file 删除文件，搭配git commit 删除版本库中文件 如果删除就用git checkout -- file 恢复文件
