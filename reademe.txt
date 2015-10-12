@@ -24,5 +24,5 @@ git rm file 删除文件，搭配git commit 删除版本库中文件 如果删除就用git checkout -
 	注意：如果远程库上的文件本地仓库没有,需要先将远程库文件合并到本地
 		使用 git pull --rebase origin master
 
- 4.git pull -u origin master 第一次推送使用，推送master分支的所有内容 此后使用git pull origin master
+ 4.git push -u origin master 第一次推送使用，推送master分支的所有内容 此后使用git push origin master
 	
