@@ -7,3 +7,22 @@ git checkout -- file ÈÃÎÄ¼ş»Øµ½×î½üÒ»´ÎµÄ git commit»ògit addÊÇµÄ×´Ì¬£¬É¾³ıµÄÒ²¿
 git reflog ¼ÇÂ¼Ã¿Ò»¸öÃüÁî
 git reset HEAD file ¿ÉÒÔ»ØÍË°æ±¾£¬Ò²¿ÉÒÔ°ÑÔİ´æÇøµÄĞŞ¸Ä»ØÍËµ½¹¤×÷Çø head±íÊ¾×îĞÂ°æ±¾
 git rm file É¾³ıÎÄ¼ş£¬´îÅägit commit É¾³ı°æ±¾¿âÖĞÎÄ¼ş Èç¹ûÉ¾³ı¾ÍÓÃgit checkout -- file »Ö¸´ÎÄ¼ş
+
+
+Ìí¼ÓÔ¶³Ì¿â
+ 1.Ê×ÏÈÔÚgithubÉÏ´´½¨Ò»¸ö²Ö¿â
+ 2.Ê¹ÓÃ git remote add origin git@github.com:licxi/demo.git µØÖ·Îªssh clone url  origin¿ÉÒÔ×Ô¶¨Òå
+ 3. Éú³ÉsshÃÜÔ¿£¬
+	3.1 ssh -keygen rsa -t -b -C"2013118120@hstc.edu.cn" ´´½¨ÃÜÔ¿¡£
+	3.2 ÊäÈëÃÜÂë
+	3.3 ½«id_rsa.pubÀïÃæµÄÎÄ¼şÄÚÈİÌí¼Óµ½githubÉÏµÄssh keys
+	3.4 ²âÊÔ,ssh -T git@github.com ÏÔÊ¾Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+		Enter passphrase for key '/c/Users/á¯Ïª/.ssh/id_rsa':
+		Hi licxi! You've successfully authenticated, but GitHub does not provide shell access.
+		Ôò³É¹¦
+
+	×¢Òâ£ºÈç¹ûÔ¶³Ì¿âÉÏµÄÎÄ¼ş±¾µØ²Ö¿âÃ»ÓĞ,ĞèÒªÏÈ½«Ô¶³Ì¿âÎÄ¼şºÏ²¢µ½±¾µØ
+		Ê¹ÓÃ git pull --rebase origin master
+
+ 4.git pull -u origin master µÚÒ»´ÎÍÆËÍÊ¹ÓÃ£¬ÍÆËÍmaster·ÖÖ§µÄËùÓĞÄÚÈİ ´ËºóÊ¹ÓÃgit pull origin master
+	
