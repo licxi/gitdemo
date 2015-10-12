@@ -26,3 +26,6 @@ git rm file 删除文件，搭配git commit 删除版本库中文件 如果删除就用git checkout -
 
  4.git push -u origin master 第一次推送使用，推送master分支的所有内容 此后使用git push origin master
 	
+
+从远程库COLNE到本地
+	$git clone git@github.com:licxi/CloneDemo.git  远程的ssh clone url 将CloneDemo clone 到当前所在的目录
