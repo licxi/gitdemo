@@ -29,3 +29,15 @@ git rm file 删除文件，搭配git commit 删除版本库中文件 如果删除就用git checkout -
 
 从远程库COLNE到本地
 	$git clone git@github.com:licxi/CloneDemo.git  远程的ssh clone url 将CloneDemo clone 到当前所在的目录
+
+
+分支使用：
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支: git checkout <name>
+	创建+切换分支：git checkout -b <name>  如 git checkout -b dev
+	合并某分支到当前分支：git marge <name>
+	删除分支：git branch -d <name>
+
+
+
